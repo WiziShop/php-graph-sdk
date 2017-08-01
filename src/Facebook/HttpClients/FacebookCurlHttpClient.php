@@ -178,6 +178,7 @@ class FacebookCurlHttpClient implements FacebookHttpable
       CURLOPT_SSL_VERIFYHOST => 2,
       CURLOPT_SSL_VERIFYPEER => true,
       CURLOPT_IPRESOLVE      => CURL_IPRESOLVE_V4,
+      CURLOPT_TIMEOUT        => 30,
       CURLOPT_CAINFO         => __DIR__ . '/certs/DigiCertHighAssuranceEVRootCA.pem',
     );
 
